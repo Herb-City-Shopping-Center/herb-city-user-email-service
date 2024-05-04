@@ -9,7 +9,7 @@ spec:
     app: herb-city-user-email-service-image
   ports:
   - protocol: TCP
-    port: 5005
+    port: 80
     targetPort: 5005
     nodePort: 31130
 ---
@@ -33,4 +33,4 @@ spec:
       - name: nodeserver
         image: us-west2-docker.pkg.dev/herb-city/herb-city-user-email-service-repo/herb-city-user-email-service-image:tag
         ports:
-        - containerPort: 5005
+        - containerPort: 80
