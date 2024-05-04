@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("Api is running");
+  res.send("Api is running for HERB CITY user email service and CI/CD on google cloud");
 });
 
 const server = app.listen(
@@ -35,3 +35,5 @@ app.use("/api/user/send-email", emailRoutes);
 
 app.use(errorHandler);
 app.use(notFound);
+
+module.exports= {app,server}
