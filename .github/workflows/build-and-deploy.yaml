@@ -1,4 +1,4 @@
-name: Deploy User Feedback Service
+name: Deploy User Email Service
 
 on:
   push:
